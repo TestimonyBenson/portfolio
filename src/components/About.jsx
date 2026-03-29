@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="py-24 bg-obsidian px-6 border-t border-white/5 relative overflow-hidden">
+     <section id="about" className="py-24 bg-obsidian px-6 border-t border-white/5 relative overflow-hidden">
       {/* Background Accent */}
       <div className="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-gold/5 to-transparent pointer-events-none"></div>
 

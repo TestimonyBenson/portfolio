@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-24 bg-charcoal px-6 border-t border-white/5">
+    <section id="contact" className="py-24 bg-charcoal px-6 border-t border-white/5">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl font-serif text-white mb-4">Let's <span className="text-gold italic">Connect</span></h2>
         <p className="text-silver mb-12 text-lg">Whether you have a project in mind, need a frontend architect, or just want to discuss the tech landscape, my inbox is always open.</p>

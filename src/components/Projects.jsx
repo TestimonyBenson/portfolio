@@ -29,7 +29,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section className="py-24 bg-charcoal px-6 border-t border-white/5">
+    <section id="work" className="py-24 bg-charcoal px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>
