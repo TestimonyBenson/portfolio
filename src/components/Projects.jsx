@@ -63,8 +63,22 @@ const Projects = () => {
                 </div>
 
                 <div className="flex space-x-6 absolute bottom-8">
-                  <a href={project.github} className="text-sm font-semibold text-white hover:text-gold transition-colors">GitHub Code</a>
-                  <a href={project.live} className="text-sm font-semibold text-white hover:text-gold transition-colors">Live Demo</a>
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-sm font-semibold text-white hover:text-gold transition-colors"
+                  >
+                    GitHub Code
+                  </a>
+                  <a 
+                    href={project.live} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-sm font-semibold text-white hover:text-gold transition-colors"
+                  >
+                    Live Demo
+                  </a>
                 </div>
               </div>
             </div>
