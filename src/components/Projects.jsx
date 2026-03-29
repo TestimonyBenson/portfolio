@@ -14,6 +14,7 @@ const projectsData = [
     title: "Zero to Tech Bootcamp",
     description: "A high-conversion landing page designed for an upcoming tech education platform tailored for beginners.",
     tech: ["Vite", "Framer Motion", "React Router"],
+    image: "/bootcamp.png",
     github: "https://github.com/TestimonyBenson/Zero-to-Tech-Bootcamp", // <-- Paste your GitHub link here
     live: "https://zero-to-tech-bootcamp-asb2.vercel.app/"             // <-- Paste your live Vercel/Netlify link here
   },
@@ -45,22 +46,20 @@ const Projects = () => {
           {projectsData.map((project) => (
             <div key={project.id} className="group relative bg-obsidian rounded-2xl overflow-hidden border border-white/5 hover:border-gold/50 transition-all duration-500">
               
-              {/* Image Placeholder area */}
-              <div className="h-56 bg-[#0a0a0a] w-full flex items-center justify-center border-b border-white/5 group-hover:bg-[#111] transition-colors duration-500">
-                <span className="text-silver/50 text-xs tracking-[0.2em] uppercase font-semibold">Project Preview</span>
+              {/* Dynamic Image Area */}
+              <div className="h-56 w-full border-b border-white/5 overflow-hidden">
+                {project.image ? (
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-[#0a0a0a] flex items-center justify-center group-hover:bg-[#111] transition-colors duration-500">
+                    <span className="text-silver/50 text-xs tracking-[0.2em] uppercase font-semibold">Project Preview</span>
+                  </div>
+                )}
               </div>
-
-              <div className="p-8">
-                <h3 className="text-2xl font-serif text-white mb-3 group-hover:text-gold transition-colors">{project.title}</h3>
-                <p className="text-silver text-sm mb-6 leading-relaxed">{project.description}</p>
-                
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {project.tech.map((item, index) => (
-                    <span key={index} className="text-[11px] font-semibold tracking-wider uppercase text-gold bg-gold/5 px-3 py-1.5 rounded-full border border-gold/20">
-                      {item}
-                    </span>
-                  ))}
-                </div>
 
                 <div className="flex space-x-6 absolute bottom-8">
                   <a 
@@ -80,7 +79,6 @@ const Projects = () => {
                     Live Demo
                   </a>
                 </div>
-              </div>
             </div>
           ))}
         </div>
