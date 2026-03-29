@@ -40,7 +40,7 @@ const About = () => {
           
           <div className="relative h-[600px] bg-charcoal rounded-2xl border border-white/10 overflow-hidden group-hover:border-gold/30 transition-colors duration-500">
             <img 
-              src="/profile.jpg" 
+              src="/profile.png" 
               alt="Testimony Darakeobong Benson" 
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
             />
