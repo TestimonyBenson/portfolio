@@ -51,15 +51,14 @@ const Hero = () => {
             Explore My Projects
           </button>
           
-          <button 
-            onClick={() => {
-              // We will link this to your actual resume PDF later
-              alert("Resume PDF link coming soon!"); 
-            }}
+          <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="w-full sm:w-auto text-white px-8 py-4 rounded-full font-bold hover:text-[#D4AF37] transition-colors duration-300 flex items-center justify-center gap-2"
           >
             Read My Resume <span className="text-xl">→</span>
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
