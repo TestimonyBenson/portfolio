@@ -38,13 +38,12 @@ const About = () => {
           {/* Glowing border effect */}
           <div className="absolute -inset-1 bg-gradient-to-tr from-gold to-yellow-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
           
-          <div className="relative h-[600px] bg-charcoal rounded-2xl border border-white/10 flex flex-col items-center justify-center overflow-hidden p-8 text-center group-hover:border-gold/30 transition-colors duration-500">
-             {/* Replace this div with an actual <img src="..." /> of yourself later */}
-            <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center mb-6">
-               <span className="text-gold font-serif text-2xl">TDB.</span>
-            </div>
-            <span className="text-silver uppercase tracking-widest text-xs font-semibold">Profile Image Placeholder</span>
-            <p className="text-silver/50 text-sm mt-4 max-w-xs">Drop your professional headshot here to personalize the experience.</p>
+          <div className="relative h-[600px] bg-charcoal rounded-2xl border border-white/10 overflow-hidden group-hover:border-gold/30 transition-colors duration-500">
+            <img 
+              src="/profile.jpg" 
+              alt="Testimony Darakeobong Benson" 
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
+            />
           </div>
         </div>
 
