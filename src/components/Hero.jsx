@@ -52,7 +52,7 @@ const Hero = () => {
           </button>
           
           <a 
-            href="/resume.pdf" 
+            href="/Testimony_Benson_Resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full sm:w-auto text-white px-8 py-4 rounded-full font-bold hover:text-[#D4AF37] transition-colors duration-300 flex items-center justify-center gap-2"
