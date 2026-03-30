@@ -3,11 +3,12 @@ import React from 'react';
 const projectsData = [
   {
     id: 1,
-    title: "RepairAgent UI",
-    description: "A frontend dashboard interfacing with the RepairAgent framework (Pryzant et al.) for AI-driven automated code repair. Features real-time syntax highlighting and diff views.",
+    title: "Smart Admin Dashboard",
+    description: "A clean, modern dashboard that shows real-time data.",
     tech: ["React", "Tailwind", "LLM APIs"],
-    github: "#",
-    live: "#"
+    image:"/admindash.png",
+    github: "https://github.com/TestimonyBenson/Smart-Admin-Dashboard", // <-- Paste your GitHub link here
+    live: "https://smart-admin-dashboard-35o5.vercel.app/"             // <-- Paste your live Vercel/Netlify link here
   },
   {
     id: 2,
@@ -18,14 +19,6 @@ const projectsData = [
     github: "https://github.com/TestimonyBenson/Zero-to-Tech-Bootcamp", // <-- Paste your GitHub link here
     live: "https://zero-to-tech-bootcamp-asb2.vercel.app/"             // <-- Paste your live Vercel/Netlify link here
   },
-  {
-    id: 3,
-    title: "Kicks Resell Storefront",
-    description: "A premium, dark-themed e-commerce storefront for an aftermarket shoe reselling brand, featuring dynamic inventory mapping and a sleek checkout flow.",
-    tech: ["Next.js", "Shopify API", "Tailwind"],
-    github: "#",
-    live: "#"
-  }
 ];
 
 const Projects = () => {
