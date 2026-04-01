@@ -19,6 +19,15 @@ const projectsData = [
     github: "https://github.com/TestimonyBenson/Zero-to-Tech-Bootcamp", 
     live: "https://zero-to-tech-bootcamp-asb2.vercel.app/"            
   },
+  {
+    id: 3,
+    title: "Smart Finance Tracker",
+    description: "An analytical finance dashboard that goes beyond simple tracking. It categorizes spending, generates automated monthly insights (e.g., 'You spent 40% more on food'), features interactive charts, and allows users to export financial reports.",
+    tech: ["React", "Tailwind", "Recharts", "Data Analysis"],
+    image: "/finance-tracker.png", // <-- Remember to add this image to your public folder!
+    github: "https://github.com/TestimonyBenson/Smart-Finance-Tracker", // <-- Update when repo is created
+    live: "https://smart-finance-tracker.vercel.app/" // <-- Update when deployed
+  }
 ];
 
 const Projects = () => {
