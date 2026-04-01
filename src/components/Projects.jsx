@@ -5,7 +5,7 @@ const projectsData = [
     id: 1,
     title: "Smart Admin Dashboard",
     description: "A clean, modern dashboard that shows real-time data.",
-    tech: ["React", "Tailwind", "LLM APIs"],
+    tech: ["React", "Tailwind", "Vite"],
     image:"/admindash.png",
     github: "https://github.com/TestimonyBenson/Smart-Admin-Dashboard", 
     live: "https://smart-admin-dashboard-35o5.vercel.app/"            
